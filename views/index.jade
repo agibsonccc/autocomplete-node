@@ -1,0 +1,13 @@
+doctype 5
+html(lang="en")
+   head
+     title = title
+     script(type="text/javascript",src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
+     script(type="text/javascript",src="javascripts/jquery.autoSuggest.minified.js")
+     link(rel="stylesheet",type="text/css",href="css/autoSuggest.css")
+     script(type="text/javascript")
+      $(function(){
+       $("#text").autoSuggest("/autocomplete/nextchar", {minChars: 2, matchCase: true});
+      });
+   body
+    input#text(type="text" )
